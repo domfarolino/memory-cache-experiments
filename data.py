@@ -1,7 +1,7 @@
 import sys
 import csv
 
-url_buckets = {} # Map {url: {kLoad: N, kUse: N, LOAD: #, DESTROY: N}}
+url_buckets = {} # Map {url: {kLoad: N, kUse: N, kReload: N, kRevalidate: N 
 
 def IsHistogramEvent(event):
   base = "RevalidationPolicy.AsyncScript."
@@ -30,11 +30,10 @@ with open(file_name) as csv_file:
     line_count += 1
 
   url_buckets = {k: v for k, v in sorted(url_buckets.items(), key=lambda item: sum(item[1].values()), reverse=True)}
+  print("URL,kUse,kLoad,kReload,kRevalidate")
   for item in url_buckets.items():
     print(PossiblyTruncateUrl(item[0]),
-          "kUse", item[1]["RevalidationPolicy.AsyncScript.kUse"],
-          "kLoad", item[1]["RevalidationPolicy.AsyncScript.kLoad"],
-          "kReload", item[1]["RevalidationPolicy.AsyncScript.kReload"],
-          "kRevalidate", item[1]["RevalidationPolicy.AsyncScript.kRevalidate"], sep=",")
-
-  print("Processed", line_count, "events")
+          item[1]["RevalidationPolicy.AsyncScript.kUse"],
+          item[1]["RevalidationPolicy.AsyncScript.kLoad"],
+          item[1]["RevalidationPolicy.AsyncScript.kReload"],
+          item[1]["RevalidationPolicy.AsyncScript.kRevalidate"], sep=",")
