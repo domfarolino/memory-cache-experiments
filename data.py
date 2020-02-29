@@ -11,7 +11,11 @@ def PossiblyTruncateUrl(url):
   return url[:50] + (url[50:] and '...')
 
 def InitializeMap():
-  return {"RevalidationPolicy.AsyncScript.kUse": 0, "RevalidationPolicy.AsyncScript.kLoad": 0, "RevalidationPolicy.AsyncScript.kReload": 0, "RevalidationPolicy.AsyncScript.kRevalidate": 0, "LOAD": 0, "DESTROY": 0}
+  return {"RevalidationPolicy.AsyncScript.kUse": 0,
+          "RevalidationPolicy.AsyncScript.kLoad": 0,
+          "RevalidationPolicy.AsyncScript.kReload": 0,
+          "RevalidationPolicy.AsyncScript.kRevalidate": 0,
+          "LOAD": 0, "DESTROY": 0}
 
 file_name = sys.argv[1]
 with open(file_name) as csv_file:
