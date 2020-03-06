@@ -1,0 +1,99 @@
+HISTOGRAM,RevalidationPolicy.AsyncScript,kLoad,https://domfarolino.com/js/bundle.min.js
+LOAD,CSS stylesheet,"https://fonts.googleapis.com/icon?family=Roboto"
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+LOAD,CSS stylesheet,"https://domfarolino.com/css/master.css"
+LOAD,Image,"https://domfarolino.com/imgs/box.svg"
+HISTOGRAM,RevalidationPolicy.AsyncScript,kLoad,https://www.google-analytics.com/analytics.js
+LOAD,Script,"https://domfarolino.com/js/bundle.min.js",1,0,102.6
+LOAD,Script,"https://www.google-analytics.com/analytics.js",1,0,99.038
+LOAD,Image,"https://www.google-analytics.com/collect?v=1&_v=j81&a=1208381613&t=pageview&_s=1&dl=https%3A%2F%2Fdomfarolino.com%2F&ul=en-us&de=UTF-8&dt=Dominic%20Farolino&sd=30-bit&sr=1680x1050&vp=1680x824&je=0&_u=AACAAEAB~&jid=&gjid=&cid=1776490730.1580735306&tid=UA-84253715-1&_gid=47468006.1583306141&z=1680108932"
+LOAD,Manifest,"https://domfarolino.com/manifest.json"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@144.png"
+FCP,675
+LCP,675
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://www.google-analytics.com/analytics.js
+LOAD,Script,"https://domfarolino.com/js/bundle.min.js",1,0,102.6
+LOAD,Script,"https://www.google-analytics.com/analytics.js",1,0,99.038
+LOAD,Image,"https://www.google-analytics.com/collect?v=1&_v=j81&a=2060246456&t=pageview&_s=1&dl=https%3A%2F%2Fdomfarolino.com%2F&ul=en-us&de=UTF-8&dt=Dominic%20Farolino&sd=30-bit&sr=1680x1050&vp=1680x824&je=0&_u=AACAAEAB~&jid=&gjid=&cid=1776490730.1580735306&tid=UA-84253715-1&_gid=47468006.1583306141&z=1652118070"
+LOAD,Manifest,"https://domfarolino.com/manifest.json"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@144.png"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@32.png"
+FCP,464
+LCP,464
+HISTOGRAM,RevalidationPolicy.AsyncScript,kLoad,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+LOAD,Image,"https://domfarolino.com/imgs/box.svg"
+LOAD,CSS stylesheet,"https://domfarolino.com/css/master.css"
+LOAD,Script,"https://domfarolino.com/js/bundle.min.js",1,0,20.7
+LOAD,CSS stylesheet,"https://fonts.googleapis.com/icon?family=Roboto"
+HISTOGRAM,RevalidationPolicy.AsyncScript,kLoad,https://www.google-analytics.com/analytics.js
+LOAD,Script,"https://www.google-analytics.com/analytics.js",1,1,82.428
+LOAD,Image,"https://www.google-analytics.com/collect?v=1&_v=j81&a=1797839604&t=pageview&_s=1&dl=https%3A%2F%2Fdomfarolino.com%2F&ul=en-us&de=UTF-8&dt=Dominic%20Farolino&sd=30-bit&sr=1680x1050&vp=1680x868&je=0&_u=AACAAEAB~&jid=&gjid=&cid=1776490730.1580735306&tid=UA-84253715-1&_gid=47468006.1583306141&z=539407802"
+LOAD,Manifest,"https://domfarolino.com/manifest.json"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@144.png"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@32.png"
+FCP,612
+LCP,612
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://www.google-analytics.com/analytics.js
+LOAD,Script,"https://domfarolino.com/js/bundle.min.js",1,0,102.6
+LOAD,Script,"https://www.google-analytics.com/analytics.js",1,0,99.038
+LOAD,Image,"https://www.google-analytics.com/collect?v=1&_v=j81&a=1217707528&t=pageview&_s=1&dl=https%3A%2F%2Fdomfarolino.com%2F&ul=en-us&de=UTF-8&dt=Dominic%20Farolino&sd=30-bit&sr=1680x1050&vp=1680x868&je=0&_u=AACAAEAB~&jid=&gjid=&cid=1776490730.1580735306&tid=UA-84253715-1&_gid=47468006.1583306141&z=1079352566"
+LOAD,Manifest,"https://domfarolino.com/manifest.json"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@144.png"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@32.png"
+FCP,440
+LCP,440
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://www.google-analytics.com/analytics.js
+LOAD,Script,"https://domfarolino.com/js/bundle.min.js",1,0,102.6
+LOAD,Script,"https://www.google-analytics.com/analytics.js",1,0,99.038
+LOAD,Image,"https://www.google-analytics.com/collect?v=1&_v=j81&a=52023606&t=pageview&_s=1&dl=https%3A%2F%2Fdomfarolino.com%2F&ul=en-us&de=UTF-8&dt=Dominic%20Farolino&sd=30-bit&sr=1680x1050&vp=1680x868&je=0&_u=AACAAEAB~&jid=&gjid=&cid=1776490730.1580735306&tid=UA-84253715-1&_gid=47468006.1583306141&z=1449277922"
+LOAD,Manifest,"https://domfarolino.com/manifest.json"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@144.png"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@32.png"
+FCP,246
+LCP,246
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://www.google-analytics.com/analytics.js
+LOAD,Script,"https://domfarolino.com/js/bundle.min.js",1,0,102.6
+LOAD,Script,"https://www.google-analytics.com/analytics.js",1,0,99.038
+LOAD,Image,"https://www.google-analytics.com/collect?v=1&_v=j81&a=1122581213&t=pageview&_s=1&dl=https%3A%2F%2Fdomfarolino.com%2F&ul=en-us&de=UTF-8&dt=Dominic%20Farolino&sd=30-bit&sr=1680x1050&vp=1680x868&je=0&_u=AACAAEAB~&jid=&gjid=&cid=1776490730.1580735306&tid=UA-84253715-1&_gid=47468006.1583306141&z=1510270368"
+LOAD,Manifest,"https://domfarolino.com/manifest.json"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@144.png"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@32.png"
+FCP,235
+LCP,235
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://www.google-analytics.com/analytics.js
+LOAD,Script,"https://domfarolino.com/js/bundle.min.js",1,0,102.6
+LOAD,Script,"https://www.google-analytics.com/analytics.js",1,0,99.038
+LOAD,Image,"https://www.google-analytics.com/collect?v=1&_v=j81&a=456574393&t=pageview&_s=1&dl=https%3A%2F%2Fdomfarolino.com%2F&ul=en-us&de=UTF-8&dt=Dominic%20Farolino&sd=30-bit&sr=1680x1050&vp=1680x868&je=0&_u=AACAAEAB~&jid=&gjid=&cid=1776490730.1580735306&tid=UA-84253715-1&_gid=47468006.1583306141&z=779206674"
+LOAD,Manifest,"https://domfarolino.com/manifest.json"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@144.png"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@32.png"
+FCP,507
+LCP,507
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://www.google-analytics.com/analytics.js
+LOAD,Script,"https://domfarolino.com/js/bundle.min.js",1,0,102.6
+LOAD,Script,"https://www.google-analytics.com/analytics.js",1,0,99.038
+LOAD,Image,"https://www.google-analytics.com/collect?v=1&_v=j81&a=1494236868&t=pageview&_s=1&dl=https%3A%2F%2Fdomfarolino.com%2F&ul=en-us&de=UTF-8&dt=Dominic%20Farolino&sd=30-bit&sr=1680x1050&vp=1680x868&je=0&_u=AACAAEAB~&jid=&gjid=&cid=1776490730.1580735306&tid=UA-84253715-1&_gid=47468006.1583306141&z=454363599"
+LOAD,Manifest,"https://domfarolino.com/manifest.json"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@144.png"
+LOAD,Other resource,"https://domfarolino.com/imgs/box@32.png"
+FCP,424
+LCP,424
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.min.js
+HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://www.google-analytics.com/analytics.js
+LOAD,Script,"https://domfarolino.com/js/bundle.min.js",1,0,102.6
+LOAD,Script,"https://www.google-analytics.com/analytics.js",1,0,99.038
+LOAD,Image,"https://www.google-analytics.com/collect?v=1&_v=j81&a=200709451&t=pageview&_s=1&dl=https%3A%2F%2Fdomfarolino.com%2F&ul=en-us&de=UTF-8&dt=Dominic%20Farolino&sd=30-bit&sr=1680x105
