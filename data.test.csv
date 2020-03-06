@@ -96,4 +96,3 @@ HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://domfarolino.com/js/bundle.
 HISTOGRAM,RevalidationPolicy.AsyncScript,kUse,https://www.google-analytics.com/analytics.js
 LOAD,Script,"https://domfarolino.com/js/bundle.min.js",1,0,102.6
 LOAD,Script,"https://www.google-analytics.com/analytics.js",1,0,99.038
-LOAD,Image,"https://www.google-analytics.com/collect?v=1&_v=j81&a=200709451&t=pageview&_s=1&dl=https%3A%2F%2Fdomfarolino.com%2F&ul=en-us&de=UTF-8&dt=Dominic%20Farolino&sd=30-bit&sr=1680x105
