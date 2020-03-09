@@ -157,6 +157,74 @@ def PrintFCPLCP():
 
 ###########################################
 
+# Async & Deduplicated Script Load Times
+
+async_deduplicated_script_load_times = []
+
+# This method simply records the overall load time of (async && deduplicated)
+# scripts, for later display.
+def MaybeRecordAsyncScriptLoadTime(row):
+  # We only care about async scripts.
+  is_async_script = (row[1] == "Script" and row[3] == "1")
+  if not is_async_script:
+    return
+
+  # ... that were also deduplicated.
+  was_deduplicated = (row[4] == "1")
+  if not was_deduplicated:
+    return
+
+  # Assert: async && deduplicated script.
+  load_time = row[5]
+  async_deduplicated_script_load_times.append(float(load_time))
+
+def PrintAsyncDedupeLoadTime():
+  print "Overall async && deduplicated async script load time", sum(async_deduplicated_script_load_times)
+
+###########################################
+
+# Script // Async Script // Async Script Deduplicated - Counts
+script_count = 0
+async_script_count = 0
+async_deduplicated_script_count = 0
+
+def MaybeRecordScriptAsyncAndDeduplicatedCount(row):
+  global script_count
+  global async_script_count
+  global async_deduplicated_script_count
+
+  is_script = (row[1] == "Script")
+  if not is_script:
+    return
+
+  script_count += 1
+
+  is_async_script = (row[3] == "1")
+  if not is_async_script:
+    return
+
+  async_script_count += 1
+
+  was_deduplicated = (row[4] == "1")
+  if not was_deduplicated:
+    return
+
+  async_deduplicated_script_count += 1
+
+def PlotAsyncScriptCounts():
+  x_name = ["Script", "Async Script", "Async + Deduplicated Script"]
+  y = [script_count, async_script_count, async_deduplicated_script_count]
+  x = np.arange(len(x_name))
+  plt.bar(x, y)
+  plt.xticks(x, x_name)
+
+  plt.suptitle('Script type loading breakdown', fontsize=18)
+  plt.xlabel('Script type', fontsize=16)
+  plt.ylabel('Number of loads', fontsize=16)
+  plt.show()
+
+###########################################
+
 def PossiblyTruncateUrl(url):
   return url[:50] + (url[50:] and '...')
 
@@ -176,6 +244,8 @@ with open(file_name) as csv_file:
       PopulateAsyncScriptRequestMap(row)
       resource_type = row[1]
       RecordPreFCPRequestType(resource_type)
+      MaybeRecordAsyncScriptLoadTime(row)
+      MaybeRecordScriptAsyncAndDeduplicatedCount(row)
     elif event == "DESTROY":
       PopulateAsyncScriptDestroyMap(row)
     elif event == "FCP":
@@ -192,3 +262,5 @@ with open(file_name) as csv_file:
   PlotAsyncScriptDestroyCountHistogram()
   PlotPreFCPRequestTypeHistogram()
   PrintFCPLCP()
+  PrintAsyncDedupeLoadTime()
+  PlotAsyncScriptCounts()
