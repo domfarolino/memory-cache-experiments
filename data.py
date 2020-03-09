@@ -108,15 +108,23 @@ def PlotAsyncScriptDestroyCountHistogram():
 is_loading_pre_fcp = True
 pre_fcp_request_types = [] # [Script, Font, Manifest, etc].
 
-def RecordPreFCPRequestType(request_type):
+def RecordPreFCPRequestType(row):
   if is_loading_pre_fcp == False:
     return
 
   # This LOAD event happened after the last LCP and before the next FCP.
   # This is because LCP is recorded when you navigate away from the previous
   # page.
+  request_type = row[1]
 
-  # TODO(domfarolino): Distinguish between Script and AsyncScript.
+  is_async_script = (request_type == "Script" and row[3] == "1")
+  if is_async_script:
+    request_type = "Async" + request_type
+
+  # Simplify |request_type|.
+  request_type = request_type.split()[0]
+
+  # Record |request_type|.
   pre_fcp_request_types.append(request_type)
 
 def PlotPreFCPRequestTypeHistogram():
@@ -242,8 +250,7 @@ with open(file_name) as csv_file:
     elif event == "LOAD":
       # First populate some |async_script_request_map| if necessary.
       PopulateAsyncScriptRequestMap(row)
-      resource_type = row[1]
-      RecordPreFCPRequestType(resource_type)
+      RecordPreFCPRequestType(row)
       MaybeRecordAsyncScriptLoadTime(row)
       MaybeRecordScriptAsyncAndDeduplicatedCount(row)
     elif event == "DESTROY":
